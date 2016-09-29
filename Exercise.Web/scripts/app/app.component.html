@@ -1,0 +1,49 @@
+﻿<div id="quote-module">
+    <h1 *ngIf="resultModel">{{resultModel.Name}}</h1>
+</div>
+
+<section style="float:left;">
+    <h2 style="<margin-></margin->top:30px;">Prototype:</h2>
+        <table cellspacing="0">
+            <thead *ngIf="resultModel">
+                <tr>
+                    <th id="name" class="title">{{resultModel.Name}}</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th id="lastPrice" class="last-price"></th>
+                    <th class="change-details">
+                        <span id="change">{{resultModel.Change | number : '1.2-2'}}</span>
+                        <span id="changePercent">({{resultModel.ChangePercent | number : '1.2-2'}}%)</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody *ngIf="resultModel">
+                <tr>
+                    <td>Range</td>
+                    <td id="range">{{resultModel.Low | number : '1.2-2'}} - {{resultModel.High | number : '1.2-2'}}</td>
+                </tr>
+                <tr>
+                    <td>Open</td>
+                    <td id="open">{{resultModel.Open | number : '1.2-2'}}</td>
+                </tr>
+                <tr>
+                    <td>Volume</td>
+                    <td id="volume">{{convertInteger(resultModel.Volume)}}</td>
+                </tr>
+                <tr>
+                    <td>Market Cap</td>
+                    <td id="marketCap">{{convertInteger(resultModel.MarketCap)}}</td>
+                </tr>
+                <tr>
+                    <td id="runTime" colspan="2" class="align-right"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input id="searchText" type="text" required [(ngModel)]="searchText"/></td>
+                    <td><button type="button" class="submit-button" (click)="executeSearch()">Get New Quote</button>
+                </tr>
+            </tfoot>
+        </table>
+</section>

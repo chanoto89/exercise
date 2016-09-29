@@ -1,0 +1,96 @@
+﻿/** ids **/
+
+#quote-module {
+  border:1px dotted #888;
+  background:#EEE;
+  min-height:200px;
+}
+
+/** classes **/
+
+.title {
+  color: #424242;
+  font: 15px Palatino;
+}
+
+.last-price {
+  color: #424242;
+  font: 21px Palatino Linotype
+}
+
+.change-details {
+  color: #008400;
+  font: 17px Palatino Linotype;
+}
+
+.align-right {
+  text-align: right !important;  
+}
+
+/** elements **/
+
+table {
+    border-top: thick solid #737373;
+    width: 100%;
+}
+
+td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+td, th {
+  width: 50%;
+}
+
+thead tr:nth-child(2) th {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+tr td:first-child, tr th:first-child {
+  text-align: left;
+}
+
+tr td:nth-child(2), tr th:nth-child(2) {
+  text-align: right;
+}
+
+tbody tr td:first-child {
+  color: #737373;
+  font: 11px Sans-Serif;
+}
+
+tbody tr td:nth-child(2) {
+  font: 14px Sans-Serif;
+  font-weight: 600;
+}
+
+tfoot tr td button {
+  font: 14px Sans-Serif;
+  color: #424242;
+}
+
+tfoot tr td button, input {
+  border-color: #dedede;
+}
+
+tbody tr td, tfoot tr td {
+    border-top: thin solid #dedede;
+}
+
+button {
+  text-decoration: none;
+  background-color: #e7e7e7;
+  color: #424242;
+  font: 14px Sans-Serif;
+  width: 100%;
+  border: 1px solid #dedede;
+}
+
+input {
+  text-decoration: none;
+  color: #424242;
+  font: 14px Sans-Serif;
+  border: 1px solid #dedede;
+}

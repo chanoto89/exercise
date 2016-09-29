@@ -1,0 +1,36 @@
+{
+  "name": "exercise",
+  "version": "1.0.0",
+  "description": "sample application for exercise",
+  "scripts": {
+    "postinstall": "typings install"
+  },
+  "author": "csoto",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common":  "2.0.0-rc.6",
+    "@angular/compiler":  "2.0.0-rc.6",
+    "@angular/core":  "2.0.0-rc.6",
+    "@angular/forms": "2.0.0-rc.6",
+    "@angular/http":  "2.0.0-rc.6",
+    "@angular/platform-browser":  "2.0.0-rc.6",
+    "@angular/platform-browser-dynamic":  "2.0.0-rc.6",
+    "@angular/router":  "3.0.0-rc.2",
+    "@angular/upgrade":  "2.0.0-rc.6",
+
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.11",
+    "zone.js": "^0.6.17",
+
+    "angular2-in-memory-web-api": "0.0.18"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+
+    "gulp": "^3.9.1"
+  },
+  "repository": {}
+}
